@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тестовый проект на Cloudflare</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+<div class="container">
+    <header>
+        <h1><i class="fas fa-cloud"></i> Cloudflare Pages Test</h1>
+        <p class="subtitle">Бесплатный хостинг с автоматическим деплоем</p>
+    </header>
+
+    <main>
+        <div class="card">
+            <h2><i class="fas fa-rocket"></i> Что это?</h2>
+            <p>Это тестовый проект, задеплоенный на Cloudflare Pages.</p>
+            <p>При пуше в GitHub - сайт автоматически обновляется.</p>
+        </div>
+
+        <div class="card">
+            <h2><i class="fas fa-bolt"></i> Преимущества</h2>
+            <ul>
+                <li>✅ Бесплатно</li>
+                <li>✅ Быстро (edge network)</li>
+                <li>✅ Автоматический HTTPS</li>
+                <li>✅ Домен *.pages.dev</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2><i class="fas fa-code"></i> Тестовая кнопка</h2>
+            <button id="testBtn" class="btn">
+                <i class="fas fa-magic"></i> Нажми меня
+            </button>
+            <p id="result">Здесь появится результат</p>
+        </div>
+
+        <div class="card">
+            <h2><i class="fas fa-server"></i> Тест API</h2>
+            <button id="apiBtn" class="btn">
+                <i class="fas fa-database"></i> Вызвать Worker API
+            </button>
+            <pre id="apiResult">Ответ API появится здесь</pre>
+        </div>
+
+        <div class="card">
+            <h2><i class="fas fa-info-circle"></i> Информация</h2>
+            <p>Сейчас: <span id="currentTime">...</span></p>
+            <p>User Agent: <span id="userAgent">...</span></p>
+        </div>
+    </main>
+
+    <footer>
+        <p>Сделанно с <i class="fas fa-heart" style="color: #ff4757;"></i> для теста Cloudflare</p>
+        <p>GitHub + Cloudflare Pages = ❤️</p>
+    </footer>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
